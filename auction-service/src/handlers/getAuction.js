@@ -23,7 +23,7 @@ async function getAuction(event, context) {
   }
 
   if (!auction) {
-    throw new createError.NotFount(`Auction with ID "${id}" not found!`);
+    throw new createError.NotFound(`Auction with ID "${id}" not found!`);
   }
 
   return {
