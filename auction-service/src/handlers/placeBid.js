@@ -16,6 +16,7 @@ async function placeBid(event, context) {
 
   // Bid identity validation
   // 
+  // 
   if (email === auction.seller) {
     throw new createError.Forbidden('You cannot bid on your own auctions!');
   }
